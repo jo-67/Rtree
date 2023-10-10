@@ -1,12 +1,13 @@
 public class Rectangle {
     double x1, y1, x2, y2;
-    int n;
+    int n; //valor para construir curva
 
-    public Rectangle(double x1, double y1, double x2, double y2) {
+    public Rectangle(double x1, double y1, double x2, double y2, int n) {
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
         this.y2 = y2;
+        this.n = n;
     }
 
     public Double centerX() {
@@ -28,5 +29,9 @@ public class Rectangle {
     }
     public Double getMaxY() {
         return Double.max(y1,y2);
+    }
+
+    public int hasN() {
+        return n;
     }
 }
