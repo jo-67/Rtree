@@ -7,6 +7,7 @@ import java.util.List;
 public class HilbertTest {
     List<Rectangle> listaDeRectangulos = new ArrayList<>();
 
+
     @Before
     public void prep () {
         Rectangle r1 = new Rectangle(1, 2, 3, 4,16);

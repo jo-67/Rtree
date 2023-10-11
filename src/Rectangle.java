@@ -13,6 +13,14 @@ public class Rectangle {
         this.n = n;
     }
 
+    public Rectangle(double x1, double y1, double x2, double y2,int n) {
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
+        this.n = n;
+    }
+
     public Double centerX() {
         return  (x1+x2) /2;
     }
@@ -44,5 +52,8 @@ public class Rectangle {
         }
         // ahora se sabe
         return true;
+    }
+    public int hasN() {
+        return n;
     }
 }
