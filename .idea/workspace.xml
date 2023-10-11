@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/STR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/STRTest.java" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rtree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Rtree.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/INode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/INode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomRectangleGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/NearestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/NearestTest.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +50,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="2" />
-  </component>
+
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+
   <component name="ProjectId" id="2WTvxISKW3sheSX9bmy7l0lpEyt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -76,7 +74,9 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Hilbert&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Diego/Desktop/universidad/semestre 8/arlgoritmos/tareaRtree&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -99,6 +99,16 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.NearestTest.orderByCenterXTest">
+    <configuration name="HilbertTest.orderByHilbertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HilbertTest" />
+      <option name="METHOD_NAME" value="orderByHilbertTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NearestTest.orderByCenterX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
@@ -123,6 +133,7 @@
       <list>
         <item itemvalue="JUnit.NearestTest.orderByCenterXTest" />
         <item itemvalue="JUnit.NearestTest.orderByCenterX" />
+        <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
       </list>
     </recent_temporary>
   </component>
@@ -136,35 +147,45 @@
       <updated>1696769631836</updated>
       <workItem from="1696769633084" duration="11936000" />
       <workItem from="1696872642063" duration="1072000" />
-      <workItem from="1697046902630" duration="177000" />
-      <workItem from="1697047118023" duration="6263000" />
+
+      <workItem from="1696877149164" duration="18056000" />
+      <workItem from="1696908682754" duration="24000" />
+      <workItem from="1696969366270" duration="5798000" />
+      <workItem from="1696986913652" duration="2104000" />
+      <workItem from="1697054665952" duration="252000" />
+
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="STR" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Nearest.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/NearestTest.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Node.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HilbertCurve.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+
   </component>
 </project>

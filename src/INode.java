@@ -4,5 +4,10 @@ public interface INode {
     Double getMinY();
     Double getMaxY();
     Double centerX();
+
     Double centerY();
+
+    int getHilbertCurvePosition();
+    int hasN();
+
 }
