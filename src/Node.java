@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Node extends AbstractNode implements INode{
     private List<INode> children;
@@ -24,6 +26,7 @@ public class Node extends AbstractNode implements INode{
         children.add(node);
     }
     public void createMbr() {
+        int n = 0; //valor para construir curva
         Comparator<INode> compareByMinX =
                 Comparator.comparing(INode::getMinX);
         children.sort(compareByMinX);
@@ -42,7 +45,11 @@ public class Node extends AbstractNode implements INode{
         children.sort(compareByMaxY);
         double maxY = children.get(children.size()-1).getMaxY();
 
-        rectangle = new Rectangle(minX,minY, maxX, maxY);
+        if (children.get(0).hasN() != 0){ //si tiene un n lo agregamos
+            n = children.get(0).hasN();
+        }
+
+        rectangle = new Rectangle(minX,minY, maxX, maxY, n);
     }
 
     public Rectangle getRectangle() {
@@ -51,5 +58,18 @@ public class Node extends AbstractNode implements INode{
 
     public List<INode> getChildren() {
         return children;
+    }
+
+    @Override
+    public List<Rectangle> search(Rectangle r) {
+        List<Rectangle> rectangleList = new ArrayList<>();
+        for (int i = 0; i < children.size(); i++) {
+            if (children.get(i).intersect(r)) {
+                List<Rectangle> add = children.get(i).search(r);
+                rectangleList.addAll(add);
+            }
+        }
+
+        return rectangleList;
     }
 }

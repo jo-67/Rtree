@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class RTree {
     private Node root;
     private int maxChildren;
@@ -9,4 +11,7 @@ public class RTree {
         return maxChildren;
     }
 
+    public List<Rectangle> search(Rectangle r) {
+        return root.search(r);
+    }
 }
