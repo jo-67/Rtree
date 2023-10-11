@@ -44,6 +44,5 @@ public class HilbertTest {
 
         RTree rtree = Hilbert.createRTreeH();
         System.out.println(rtree);
-
     }
 }
