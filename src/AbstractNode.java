@@ -18,8 +18,12 @@ public abstract class AbstractNode implements INode{
     public Double getMaxY() {
         return rectangle.getMaxY();
     }
-
     public Double centerX() {
         return rectangle.centerX();
     }
+    public Double centerY() {
+        return rectangle.centerY();
+    }
+
+
 }
