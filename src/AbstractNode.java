@@ -18,9 +18,12 @@ public abstract class AbstractNode implements INode{
     public Double getMaxY() {
         return rectangle.getMaxY();
     }
-
     public Double centerX() {
         return rectangle.centerX();
+    }
+
+    public Double centerY() {
+        return rectangle.centerY();
     }
 
     public int getHilbertCurvePosition() {
@@ -30,4 +33,5 @@ public abstract class AbstractNode implements INode{
     public int hasN() {
         return rectangle.hasN();
     }
+
 }
