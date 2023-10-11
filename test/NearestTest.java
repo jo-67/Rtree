@@ -42,6 +42,5 @@ public class NearestTest {
 
         RTree rtree = nearest.createRTree();
         System.out.println(rtree);
-
     }
 }

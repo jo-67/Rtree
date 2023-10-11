@@ -10,14 +10,14 @@ public class RandomRectangleGenerator {
     public static void main(String[] args){
         //random object
         Random ran = new Random();
-        int n = 10000; //cantidad de rectangulos que se quieren generar
-        int hilbert = 0; //número de la curva
+        int n = (int)Math.pow(2,10); //cantidad de rectangulos que se quieren generar
+        int hilbert = 16; //número de la curva (log2 punto maximo)
         List<Rectangle> listaDeRectangulos = new ArrayList<>(); //lista para guardar los rectangulos
         int k = 0;
         while (listaDeRectangulos.size() != n) {
 
             int max = (500000/1000)*(k+1); //rangos más pequeños para que demore menos
-            int min = (500000/1000)*k;
+            int min = (500000/1000)*k; //se podria cambiar hasta dividirlo en 5000
 
             //generando numero entre 0 y 500000 des comentar esto para probar si se demora más o menos
             //int x1 = ran.nextInt(500000);
@@ -53,6 +53,17 @@ public class RandomRectangleGenerator {
         System.out.println(listaDeRectangulos.get(765).y1);
         System.out.println(listaDeRectangulos.get(765).x2);
         System.out.println(listaDeRectangulos.get(765).y2);
+
+        HilbertCurve nearest = new HilbertCurve(listaDeRectangulos, 100);
+        nearest.orderByHilbertCurve(listaDeRectangulos);
+        List<Rectangle> nuevaLista = nearest.getRectangleList();
+        System.out.println(nuevaLista);
+        for (int i = 0; i<nuevaLista.size(); i++ ){
+            System.out.println(nuevaLista.get(i).getHilbertCurvePosition());
+        }
+
+        RTree rtree = nearest.createRTreeH();
+        System.out.println(rtree);
     }
 
 }
