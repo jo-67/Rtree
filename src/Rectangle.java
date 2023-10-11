@@ -27,4 +27,16 @@ public class Rectangle {
     public Double getMaxY() {
         return Double.max(y1,y2);
     }
+
+    public Boolean intersect(Rectangle r) {
+        if (this.getMaxX() < r.getMinX() || this.getMinX() > r.getMaxX()) {
+            // el maximo es que el minimo no intersecta
+            return false;
+        }
+        if (this.getMaxY() < r.getMinY() || this.getMinY() > r.getMaxY()) {
+            return false;
+        }
+        // ahora se sabe
+        return true;
+    }
 }
