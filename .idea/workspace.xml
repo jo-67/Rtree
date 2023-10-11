@@ -6,11 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Rtree/AbstractNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/AbstractNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Rtree/INode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/INode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Rtree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Rtree/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Rtree/NearestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Rtree/NearestTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/INode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomRectangleGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/HilbertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/HilbertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomRectangleGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/NearestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/NearestTest.java" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +32,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Hilbert" />
+    <option name="BRANCH" value="origin/STR" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -59,11 +64,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
-
   <component name="ProjectId" id="2WTvxISKW3sheSX9bmy7l0lpEyt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -107,7 +110,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HilbertTest.orderByHilbertTest">
+  <component name="RunManager" selected="JUnit.NearestTest.orderByCenterXTest">
     <configuration name="HilbertTest.orderByHilbertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
@@ -150,9 +153,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
-        <item itemvalue="JUnit.NearestTest.searchNearest" />
         <item itemvalue="JUnit.NearestTest.orderByCenterXTest" />
+        <item itemvalue="JUnit.NearestTest.searchNearest" />
+        <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
         <item itemvalue="JUnit.NearestTest.orderByCenterX" />
         <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
       </list>
@@ -168,14 +171,20 @@
       <updated>1696769631836</updated>
       <workItem from="1696769633084" duration="11936000" />
       <workItem from="1696872642063" duration="1072000" />
-
       <workItem from="1696877149164" duration="18056000" />
       <workItem from="1696908682754" duration="24000" />
       <workItem from="1696969366270" duration="5798000" />
       <workItem from="1696986913652" duration="2104000" />
       <workItem from="1697054665952" duration="252000" />
-
     </task>
+    <task id="LOCAL-00001" summary="lol">
+      <created>1697057107476</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697057107476</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +201,10 @@
       </map>
     </option>
   </component>
-
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lol" />
+    <option name="LAST_COMMIT_MESSAGE" value="lol" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -218,6 +230,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-
   </component>
 </project>

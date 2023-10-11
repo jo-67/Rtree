@@ -1,3 +1,5 @@
+import java.util.List;
+
 public interface INode {
     Double getMinX();
     Double getMaxX();
