@@ -25,8 +25,13 @@ public class Rectangle {
         return  (x1+x2) /2;
     }
 
+
+    public Double centerY() {
+        return  (y1+y2) /2;
+
     public int getHilbertCurvePosition() {
         return HilbertCurve.xy2d(n,(int)((x1+x2)/2),(int)((y1+y2)/2));
+
     }
 
     public Double getMinX() {
