@@ -18,11 +18,25 @@ public abstract class AbstractNode implements INode{
     public Double getMaxY() {
         return rectangle.getMaxY();
     }
-
     public Double centerX() {
         return rectangle.centerX();
     }
+
     public boolean intersect(Rectangle r) {
         return rectangle.intersect(r);
     }
+
+
+    public Double centerY() {
+        return rectangle.centerY();
+    }
+
+    public int getHilbertCurvePosition() {
+        return rectangle.getHilbertCurvePosition();
+    }
+
+    public int hasN() {
+        return rectangle.hasN();
+    }
+
 }

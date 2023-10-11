@@ -26,6 +26,7 @@ public class Node extends AbstractNode implements INode{
         children.add(node);
     }
     public void createMbr() {
+        int n = 0; //valor para construir curva
         Comparator<INode> compareByMinX =
                 Comparator.comparing(INode::getMinX);
         children.sort(compareByMinX);
@@ -44,7 +45,11 @@ public class Node extends AbstractNode implements INode{
         children.sort(compareByMaxY);
         double maxY = children.get(children.size()-1).getMaxY();
 
-        rectangle = new Rectangle(minX,minY, maxX, maxY);
+        if (children.get(0).hasN() != 0){ //si tiene un n lo agregamos
+            n = children.get(0).hasN();
+        }
+
+        rectangle = new Rectangle(minX,minY, maxX, maxY, n);
     }
 
     public Rectangle getRectangle() {
