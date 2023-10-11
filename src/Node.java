@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Node extends AbstractNode implements INode{
     private List<INode> children;
@@ -56,5 +58,18 @@ public class Node extends AbstractNode implements INode{
 
     public List<INode> getChildren() {
         return children;
+    }
+
+    @Override
+    public List<Rectangle> search(Rectangle r) {
+        List<Rectangle> rectangleList = new ArrayList<>();
+        for (int i = 0; i < children.size(); i++) {
+            if (children.get(i).intersect(r)) {
+                List<Rectangle> add = children.get(i).search(r);
+                rectangleList.addAll(add);
+            }
+        }
+
+        return rectangleList;
     }
 }

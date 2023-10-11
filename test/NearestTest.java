@@ -43,4 +43,17 @@ public class NearestTest {
         RTree rtree = nearest.createRTree();
         System.out.println(rtree);
     }
+
+    @Test
+    public void searchNearest() {
+        Nearest nearest = new Nearest(listaDeRectangulos, 3);
+        nearest.orderByCenterX(listaDeRectangulos);
+        List<Rectangle> nuevaLista = nearest.getRectangleList();
+        System.out.println(nuevaLista);
+
+        RTree rtree = nearest.createRTree();
+        Rectangle r = new Rectangle(2,2,3,3);
+        List<Rectangle> rectangleList = rtree.search(r);
+        System.out.println(rectangleList);
+    }
 }
