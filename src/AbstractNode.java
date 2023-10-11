@@ -22,4 +22,12 @@ public abstract class AbstractNode implements INode{
     public Double centerX() {
         return rectangle.centerX();
     }
+
+    public int getHilbertCurvePosition() {
+        return rectangle.getHilbertCurvePosition();
+    }
+
+    public int hasN() {
+        return rectangle.hasN();
+    }
 }
