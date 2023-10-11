@@ -10,4 +10,6 @@ public interface INode {
     List<Rectangle> search(Rectangle r);
 
     boolean intersect(Rectangle r);
+    int getHilbertCurvePosition();
+    int hasN();
 }

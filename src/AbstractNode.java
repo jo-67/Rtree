@@ -25,4 +25,12 @@ public abstract class AbstractNode implements INode{
     public boolean intersect(Rectangle r) {
         return rectangle.intersect(r);
     }
+
+    public int getHilbertCurvePosition() {
+        return rectangle.getHilbertCurvePosition();
+    }
+
+    public int hasN() {
+        return rectangle.hasN();
+    }
 }
