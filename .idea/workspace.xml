@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/STR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/STRTest.java" afterDir="false" />
+    <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="Creacion STR y clases necesarias (sin probar-falta recursividad)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rtree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Rtree.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/INode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/INode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/STR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/NearestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/NearestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/STRTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/STRTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +93,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NearestTest.orderByCenterXTest">
+  <component name="RunManager" selected="JUnit.STRTest">
+    <configuration name="NearestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NearestTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NearestTest.orderByCenterX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,8 +123,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="STRTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="STRTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="STRTest.createRTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="STRTest" />
+      <option name="METHOD_NAME" value="createRTreeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.STRTest" />
+        <item itemvalue="JUnit.STRTest.createRTreeTest" />
+        <item itemvalue="JUnit.NearestTest" />
         <item itemvalue="JUnit.NearestTest.orderByCenterXTest" />
         <item itemvalue="JUnit.NearestTest.orderByCenterX" />
       </list>
@@ -137,8 +163,17 @@
       <workItem from="1696769633084" duration="11936000" />
       <workItem from="1696872642063" duration="1072000" />
       <workItem from="1697046902630" duration="177000" />
-      <workItem from="1697047118023" duration="6263000" />
+      <workItem from="1697047118023" duration="12283000" />
     </task>
+    <task id="LOCAL-00001" summary="Creacion STR y clases necesarias (sin probar-falta recursividad)">
+      <option name="closed" value="true" />
+      <created>1697054990877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697054990877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,5 +201,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creacion STR y clases necesarias (sin probar-falta recursividad)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion STR y clases necesarias (sin probar-falta recursividad)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="26" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Rtree$NearestTest.ic" NAME="NearestTest Coverage Results" MODIFIED="1697058957652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
