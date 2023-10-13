@@ -7,7 +7,7 @@ public interface INode {
     Double getMaxY();
     Double centerX();
 
-    List<Rectangle> search(Rectangle r);
+    SearchResult search(Rectangle r, int counter);
 
     boolean intersect(Rectangle r);
 
