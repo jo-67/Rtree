@@ -1,3 +1,5 @@
+import java.util.List;
+
 public abstract class AbstractNode implements INode{
     public Rectangle rectangle;
 
@@ -39,4 +41,8 @@ public abstract class AbstractNode implements INode{
         return rectangle.hasN();
     }
 
+    @Override
+    public List<Rectangle> search(Rectangle r) {
+        return null;
+    }
 }

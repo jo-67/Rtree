@@ -11,7 +11,7 @@ public class RTree {
         return maxChildren;
     }
 
-    public List<Rectangle> search(Rectangle r) {
-        return root.search(r);
+    public SearchResult search(Rectangle r) {
+        return root.search(r,1);
     }
 }
