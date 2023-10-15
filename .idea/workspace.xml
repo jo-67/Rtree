@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="">
+
+    <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="Creacion STR y clases necesarias (sin probar-falta recursividad)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/STR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/NearestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/NearestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/STRTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/STRTest.java" afterDir="false" />
+
+   
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/AccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AccessTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/TiempoBusquedaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TiempoBusquedaTest.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +32,11 @@
       </list>
     </option>
   </component>
+
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="root" />
   </component>
+
   <component name="Git.Settings">
     <branch-grouping />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -37,10 +47,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-    &quot;lastFilter&quot;: {
+  &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;
-    }
-    }</component>
+  }
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -52,9 +62,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-    &quot;associatedIndex&quot;: 3
-    }</component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2WTvxISKW3sheSX9bmy7l0lpEyt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -62,7 +72,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
-    &quot;keyToString&quot;: {
+  &quot;keyToString&quot;: {
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
@@ -74,16 +84,14 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Hilbert&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Diego/Desktop/universidad/semestre 8/arlgoritmos/tareaRtree&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-    }
-    }</component>
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pepad\IdeaProjects\Rtree" />
@@ -101,6 +109,7 @@
       <recent name="" />
     </key>
   </component>
+
   <component name="RunManager" selected="JUnit.AccessTest.Nearest">
     <configuration name="AccessTest.Nearest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
@@ -108,6 +117,7 @@
       <option name="MAIN_CLASS_NAME" value="AccessTest" />
       <option name="METHOD_NAME" value="Nearest" />
       <option name="TEST_OBJECT" value="method" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,11 +142,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NearestTest.searchNearest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="STRTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NearestTest" />
-      <option name="METHOD_NAME" value="searchNearest" />
+      <option name="MAIN_CLASS_NAME" value="STRTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="STRTest.createRTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="STRTest" />
+      <option name="METHOD_NAME" value="createRTreeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +173,14 @@
     </configuration>
     <recent_temporary>
       <list>
+
+
         <item itemvalue="JUnit.AccessTest.Nearest" />
         <item itemvalue="JUnit.TiempoBusquedaTest.Nearest" />
         <item itemvalue="JUnit.NearestTest.searchNearest" />
         <item itemvalue="JUnit.NearestTest.orderByCenterXTest" />
         <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
+
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +194,10 @@
       <updated>1696769631836</updated>
       <workItem from="1696769633084" duration="11936000" />
       <workItem from="1696872642063" duration="1072000" />
+
+      <workItem from="1697046902630" duration="177000" />
+      <workItem from="1697047118023" duration="12283000" />
+
       <workItem from="1696877149164" duration="18056000" />
       <workItem from="1696908682754" duration="24000" />
       <workItem from="1696969366270" duration="5798000" />
@@ -180,13 +206,15 @@
       <workItem from="1697167406033" duration="862000" />
       <workItem from="1697203391159" duration="1041000" />
       <workItem from="1697405622847" duration="2725000" />
+
     </task>
-    <task id="LOCAL-00001" summary="lol">
-      <created>1697057107476</created>
+    <task id="LOCAL-00001" summary="Creacion STR y clases necesarias (sin probar-falta recursividad)">
+      <option name="closed" value="true" />
+      <created>1697054990877</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1697057107476</updated>
+      <updated>1697054990877</updated>
     </task>
     <task id="LOCAL-00002" summary="Busqueda con counter">
       <created>1697168207527</created>
@@ -206,20 +234,43 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="STR" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+
+    <MESSAGE value="Creacion STR y clases necesarias (sin probar-falta recursividad)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion STR y clases necesarias (sin probar-falta recursividad)" />
+
     <MESSAGE value="lol" />
     <MESSAGE value="Busqueda con counter" />
     <option name="LAST_COMMIT_MESSAGE" value="Busqueda con counter" />
+
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="26" />
+        </breakpoint>
+
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Nearest.java</url>
           <line>87</line>
@@ -245,7 +296,11 @@
           <line>26</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
+
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Rtree$NearestTest.ic" NAME="NearestTest Coverage Results" MODIFIED="1697058957652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

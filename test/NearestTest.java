@@ -31,6 +31,7 @@ public class NearestTest {
         listaDeRectangulos.add(r8);
         listaDeRectangulos.add(r9);
         listaDeRectangulos.add(r10);
+
     }
 
     @Test
