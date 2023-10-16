@@ -7,6 +7,7 @@ public interface INode {
     Double getMaxY();
     Double centerX();
 
+    SearchResult search(Rectangle r, int counter);
 
     List<Rectangle> search(Rectangle r);
 
@@ -16,5 +17,4 @@ public interface INode {
 
     int getHilbertCurvePosition();
     int hasN();
-
 }

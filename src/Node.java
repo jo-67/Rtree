@@ -61,15 +61,17 @@ public class Node extends AbstractNode implements INode{
     }
 
     @Override
-    public List<Rectangle> search(Rectangle r) {
+    public SearchResult search(Rectangle r, int counter) {
         List<Rectangle> rectangleList = new ArrayList<>();
         for (int i = 0; i < children.size(); i++) {
             if (children.get(i).intersect(r)) {
-                List<Rectangle> add = children.get(i).search(r);
-                rectangleList.addAll(add);
+                SearchResult add = children.get(i).search(r,0);
+                rectangleList.addAll(add.getRectangleList());
+                counter = counter + add.getCounter(); // añade numero de nodos accedidos en add
             }
+                counter = counter + 1; // añade haber accedido al nodo
         }
 
-        return rectangleList;
+        return new SearchResult(rectangleList,counter);
     }
 }

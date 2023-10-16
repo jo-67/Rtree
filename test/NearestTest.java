@@ -54,7 +54,8 @@ public class NearestTest {
 
         RTree rtree = nearest.createRTree();
         Rectangle r = new Rectangle(2,2,3,3);
-        List<Rectangle> rectangleList = rtree.search(r);
-        System.out.println(rectangleList);
+        SearchResult result = rtree.search(r);
+        System.out.println(result.getRectangleList());
+        System.out.println(result.getCounter());
     }
 }

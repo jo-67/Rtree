@@ -9,11 +9,11 @@ public class Leaf extends AbstractNode implements INode{
     }
 
     @Override
-    public List<Rectangle> search(Rectangle r) {
+    public SearchResult search(Rectangle r, int counter) {
         List<Rectangle> rl = new ArrayList<>();
         if (rectangle.intersect(r)) {
             rl.add(rectangle);
         }
-        return rl;
+        return new SearchResult(rl, 1);
     }
 }
