@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="Busqueda con counter">
-      <change afterPath="$PROJECT_DIR$/test/AccessTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TiempoBusquedaTest.java" afterDir="false" />
+    <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Rtree/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/AccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AccessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TiempoBusquedaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TiempoBusquedaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +25,13 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/STR" />
+    <option name="BRANCH" value="root" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="fde659d4cce4d7eca4c9296ec647242261a9f438" />
-      </map>
-    </option>
     <branch-grouping />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="root" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,7 +101,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TiempoBusquedaTest.Nearest">
+  <component name="RunManager" selected="JUnit.AccessTest.Nearest">
     <configuration name="AccessTest.Nearest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
@@ -162,13 +154,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TiempoBusquedaTest.Nearest" />
         <item itemvalue="JUnit.AccessTest.Nearest" />
+        <item itemvalue="JUnit.TiempoBusquedaTest.Nearest" />
         <item itemvalue="JUnit.NearestTest.searchNearest" />
         <item itemvalue="JUnit.NearestTest.orderByCenterXTest" />
-        <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
-        <item itemvalue="JUnit.NearestTest.searchNearest" />
-        <item itemvalue="JUnit.NearestTest.orderByCenterX" />
         <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
       </list>
     </recent_temporary>

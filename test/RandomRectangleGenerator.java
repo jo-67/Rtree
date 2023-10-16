@@ -7,7 +7,7 @@ import java.util.Random;
         //generedor de numeros randoms
         //solo se agregan a la lista si x1-x2 entre 0 y 100 y1 - y2 entre 0 y 100 o inverso con x2 - x1 .. etc
 public class RandomRectangleGenerator {
-    public static void main(String[] args){
+    public static List<Rectangle> crearRectangulos(int cantidad,int tamano, int hilbert){
         //random object
         Random ran = new Random();
         int n = (int)Math.pow(2,cantidad); //cantidad de rectangulos que se quieren generar
@@ -15,8 +15,8 @@ public class RandomRectangleGenerator {
         int k = 0;
         while (listaDeRectangulos.size() != n) {
 
-            int max = (500000 / 1000) * (k + 1);
-            int min = (500000 / 1000) * k;
+            int max = (500000 / 5000) * (k + 1);
+            int min = (500000 / 5000) * k;
 
             int kmax = 1000;
 
@@ -54,12 +54,13 @@ public class RandomRectangleGenerator {
             System.out.println(k);
 
         }
+        /*
         System.out.println("Se generaron los rectangulos");
         System.out.println(listaDeRectangulos.get(765).x1);
         System.out.println(listaDeRectangulos.get(765).y1);
         System.out.println(listaDeRectangulos.get(765).x2);
         System.out.println(listaDeRectangulos.get(765).y2);
-
+        */
         return listaDeRectangulos;
     }
 

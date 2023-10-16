@@ -8,12 +8,12 @@ public class TiempoBusquedaTest {
     Rectangle r1;
     @Before
     public void prep() {
-        randomList = RandomRectangleGenerator.generateRecangles(10);
+        randomList = RandomRectangleGenerator.crearRectangulos(10, 100, 0);
         r1 = randomList.get(500);
     }
 
     public void Nearest(int p) {
-        randomList = RandomRectangleGenerator.generateRecangles(p);
+        randomList = RandomRectangleGenerator.crearRectangulos(p, 100, 0);
         Nearest nearest = new Nearest(randomList, 3);
         RTree rtree = nearest.createRTree();
 

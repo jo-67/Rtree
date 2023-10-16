@@ -8,7 +8,7 @@ public class AccessTest {
     Rectangle r1;
     @Before
     public void prep() {
-        randomList = RandomRectangleGenerator.generateRecangles(10);
+        randomList = RandomRectangleGenerator.crearRectangulos(10, 100, 0);
         r1 = randomList.get(500);
     }
     @Test
