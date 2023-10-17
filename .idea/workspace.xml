@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MemoryHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/diskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Rtree/Leaf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/Leaf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Rtree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Rtree/RTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/RTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Rtree/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/Rectangle.class" afterDir="false" />
+    <list default="true" id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="Escritura en archivo lista">
       <change beforePath="$PROJECT_DIR$/src/AbstractNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leaf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/INode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,32 +99,42 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.diskTest.transformationTest">
-    <configuration name="diskTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccessTest.Access">
+    <configuration name="AccessTest.Access" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="diskTest" />
-      <option name="METHOD_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="AccessTest" />
+      <option name="METHOD_NAME" value="Access" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="diskTest.Test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HilbertTest.orderByHilbertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="diskTest" />
-      <option name="METHOD_NAME" value="Test2" />
+      <option name="MAIN_CLASS_NAME" value="HilbertTest" />
+      <option name="METHOD_NAME" value="orderByHilbertTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="diskTest.readTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NearestTest.searchNearest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="diskTest" />
-      <option name="METHOD_NAME" value="readTest" />
+      <option name="MAIN_CLASS_NAME" value="NearestTest" />
+      <option name="METHOD_NAME" value="searchNearest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="STRTest.orderByCenterXTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="STRTest" />
+      <option name="METHOD_NAME" value="orderByCenterXTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,23 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="diskTest.writeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rtree" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="diskTest" />
-      <option name="METHOD_NAME" value="writeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccessTest.Access" />
+        <item itemvalue="JUnit.NearestTest.searchNearest" />
+        <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
+        <item itemvalue="JUnit.STRTest.orderByCenterXTest" />
         <item itemvalue="JUnit.diskTest.transformationTest" />
-        <item itemvalue="JUnit.diskTest.readTest" />
-        <item itemvalue="JUnit.diskTest.writeTest" />
-        <item itemvalue="JUnit.diskTest.Test" />
-        <item itemvalue="JUnit.diskTest.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1697168207527</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Escritura en archivo lista">
+      <created>1697567812481</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697567812481</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Escritura en archivo lista">
+      <created>1697567823626</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697567823626</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +245,8 @@
     <MESSAGE value="Creacion STR y clases necesarias (sin probar-falta recursividad)" />
     <MESSAGE value="lol" />
     <MESSAGE value="Busqueda con counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Busqueda con counter" />
+    <MESSAGE value="Escritura en archivo lista" />
+    <option name="LAST_COMMIT_MESSAGE" value="Escritura en archivo lista" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -263,6 +270,26 @@
           <url>file://$PROJECT_DIR$/test/diskTest.java</url>
           <line>55</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Node.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Node.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Node.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Node.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

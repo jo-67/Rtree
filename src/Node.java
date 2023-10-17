@@ -31,20 +31,20 @@ public class Node extends AbstractNode implements INode, Serializable {
         Comparator<INode> compareByMinX =
                 Comparator.comparing(INode::getMinX);
         children.sort(compareByMinX);
-        Double minX = children.get(0).getMinX();
+        Integer minX = children.get(0).getMinX();
         Comparator<INode> compareByMaxX =
                 Comparator.comparing(INode::getMaxX);
         children.sort(compareByMaxX);
-        double maxX = children.get(children.size()-1).getMaxX();
+        int maxX = children.get(children.size()-1).getMaxX();
 
         Comparator<INode> compareByMinY =
                 Comparator.comparing(INode::getMinY);
         children.sort(compareByMinY);
-        double minY = children.get(0).getMinY();
+        int minY = children.get(0).getMinY();
         Comparator<INode> compareByMaxY =
                 Comparator.comparing(INode::getMaxY);
         children.sort(compareByMaxY);
-        double maxY = children.get(children.size()-1).getMaxY();
+        int maxY = children.get(children.size()-1).getMaxY();
 
         if (children.get(0).hasN() != 0){ //si tiene un n lo agregamos
             n = children.get(0).hasN();

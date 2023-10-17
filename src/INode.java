@@ -1,11 +1,11 @@
 import java.util.List;
 
 public interface INode {
-    Double getMinX();
-    Double getMaxX();
-    Double getMinY();
-    Double getMaxY();
-    Double centerX();
+    Integer getMinX();
+    Integer getMaxX();
+    Integer getMinY();
+    Integer getMaxY();
+    Integer centerX();
 
     SearchResult search(Rectangle r, int counter);
 
@@ -13,7 +13,7 @@ public interface INode {
 
     boolean intersect(Rectangle r);
 
-    Double centerY();
+    Integer centerY();
 
     int getHilbertCurvePosition();
     int hasN();
