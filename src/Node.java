@@ -1,3 +1,4 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -5,9 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Node extends AbstractNode implements INode{
+public class Node extends AbstractNode implements INode, Serializable {
     private List<INode> children;
-    //private Rectangle rectangle;
+    private Rectangle rectangle;
 
     public Node() {
         super();
@@ -50,6 +51,7 @@ public class Node extends AbstractNode implements INode{
         }
 
         rectangle = new Rectangle(minX,minY, maxX, maxY, n);
+        super.setRectangle(rectangle);
     }
 
     public Rectangle getRectangle() {
@@ -73,5 +75,17 @@ public class Node extends AbstractNode implements INode{
         }
 
         return new SearchResult(rectangleList,counter);
+    }
+
+    public boolean equals(Node node) {
+        if (rectangle.equals(node.rectangle) && children.size() == node.children.size()) {
+            for (int i = 0; i < children.size(); i++) {
+                if (! this.children.get(i).equals(node.children.get(i))) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
     }
 }

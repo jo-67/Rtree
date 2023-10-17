@@ -28,7 +28,6 @@ public abstract class AbstractNode implements INode{
         return rectangle.intersect(r);
     }
 
-
     public Double centerY() {
         return rectangle.centerY();
     }
@@ -44,5 +43,9 @@ public abstract class AbstractNode implements INode{
     @Override
     public List<Rectangle> search(Rectangle r) {
         return null;
+    }
+
+    public void setRectangle(Rectangle r) {
+        this.rectangle = r;
     }
 }

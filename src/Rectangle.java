@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Rectangle {
+public class Rectangle implements Serializable {
     double x1, y1, x2, y2;
     int n; //valor para construir curva
 
@@ -60,5 +61,12 @@ public class Rectangle {
     public int hasN() {
         return n;
 
+    }
+
+    public boolean equals(Rectangle r) {
+        return getMinX().equals(r.getMinX()) &&
+                getMaxX().equals(r.getMaxX()) &&
+                getMinY().equals(r.getMinY()) &&
+                getMaxY().equals(r.getMaxY());
     }
 }
