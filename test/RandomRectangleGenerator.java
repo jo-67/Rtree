@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Random;
 
 public class RandomRectangleGenerator {
-    public static List<Rectangle> crearRectangulos(int cantidad,int tamano, int hilbert){
+    public static List<Rectangle> crearRectangulos(int cantidad,int tamano, int hilbert) {
         //random object
         Random ran = new Random();
         int n = (int)Math.pow(2,cantidad); //cantidad de rectangulos que se quieren generar
@@ -36,9 +36,9 @@ public class RandomRectangleGenerator {
                 listaDeRectangulos.add(r);
             }
 
-            if (k == kmax){
+            if (k == kmax) {
                 k = 0;
-            }else{
+            } else{
                 k = k + 1;
             }
 
@@ -51,5 +51,20 @@ public class RandomRectangleGenerator {
         crearRectangulos(10,100,12);
         crearRectangulos(10, 100000, 0);
     }
+    public static List<Rectangle> crearRectangulos2(int l, int cantidad) {
+        List<Rectangle> listaRectangulos = new ArrayList<>();
+        Random rand = new Random();
+        int n = (int) Math.pow(2, cantidad); //cantidad de rectangulos que se quieren generar
+        for (int i = 0; i < n; i++) {
+            int x1 = rand.nextInt(500001); // Valores aleatorios entre 0 y 500000
+            int x2 = rand.nextInt(500001);
+            int x3 = rand.nextInt(l + 1);  // Tamaño del lado entre 0 y l
+            int x4 = rand.nextInt(l + 1);
 
+            Rectangle rectangulo = new Rectangle(x1, x2, x3, x4);
+            listaRectangulos.add(rectangulo);
+        }
+
+        return listaRectangulos;
+    }
 }

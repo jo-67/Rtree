@@ -66,5 +66,14 @@ public class diskTest {
         assertTrue(b);
     }
 
+    @Test
+    public void readSegmentTest() throws IOException, ClassNotFoundException {
+        String path = "C:\\Users\\pepad\\IdeaProjects\\Rtree\\out\\file.bin";
+        MemoryHandler m = new MemoryHandler(path);
+        byte[] r = m.readFileSegment(0, 100);
+        System.out.println(r);
+        RTree rTree = MemoryHandler.bytesToRtree(r);
+        System.out.println(rTree);
+    }
 
 }

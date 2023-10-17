@@ -16,11 +16,11 @@ public class TiempoBusquedaTest {
         randomList = new ArrayList<>();
 
         randomListQ = RandomRectangleGenerator.crearRectangulos(7,100000, 0); //lista de rectangulos de consultas Q (en vez de 100 son 128)
-        for (int i = 10; i <= 15; i++){ //cambiar el 15 a 25 despues
+        for (int i = 10; i <= 25; i++){ //cambiar el 15 a 25 despues
           List<Rectangle>  r = RandomRectangleGenerator.crearRectangulos(i,100,0);
           randomList.add(r);
           }
-        //System.out.println(randomList.size());
+        System.out.println(randomList.size());
         }
 
     public long Nearest(int k) {

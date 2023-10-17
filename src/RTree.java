@@ -19,4 +19,8 @@ public class RTree implements Serializable {
     public boolean equals(RTree rTree) {
         return root.equals(rTree.root);
     }
+
+    public Node getRoot() {
+        return this.root;
+    }
 }

@@ -13,7 +13,7 @@ public class MemoryHandler {
 
         ByteArrayOutputStream bs = new ByteArrayOutputStream();
         ObjectOutputStream os = new ObjectOutputStream(bs);
-        os.writeObject(rtree);  // this es de tipo DatoUdp
+        os.writeObject(rtree.getRoot());  // this es de tipo DatoUdp
         os.close();
         byte[] bytes = bs.toByteArray(); // devuelve byte[]
         return bytes;
@@ -22,7 +22,8 @@ public class MemoryHandler {
     public static RTree bytesToRtree(byte[] bytes) throws IOException, ClassNotFoundException {
         ByteArrayInputStream bs2 = new ByteArrayInputStream(bytes); // bytes es el byte[]
         ObjectInputStream is = new ObjectInputStream(bs2);
-        RTree rtree = (RTree) is.readObject();
+        Node root = (Node) is.readObject();
+        RTree rtree = new RTree(root, 3);
         is.close();
         return rtree;
     }
@@ -55,5 +56,20 @@ public class MemoryHandler {
         }
     }
 
+    public byte[] readFileSegment(long start, long end) {
 
+        try (RandomAccessFile file = new RandomAccessFile(path, "r")) {
+            file.seek(start); // Ir a la posición de inicio
+
+            long bytesToRead = end - start;
+            byte[] data = new byte[(int) bytesToRead];
+
+            file.read(data);
+            return data;
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
