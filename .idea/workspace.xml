@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
-    <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="Creacion STR y clases necesarias (sin probar-falta recursividad)">
+    <list default="true" id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/STR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/STR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/NearestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/NearestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/STRTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/STRTest.java" afterDir="false" />
-
-   
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Rtree/NearestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Rtree/NearestTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/AccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AccessTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/TiempoBusquedaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TiempoBusquedaTest.java" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +25,9 @@
       </list>
     </option>
   </component>
-
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="root" />
   </component>
-
   <component name="Git.Settings">
     <branch-grouping />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -109,53 +100,32 @@
       <recent name="" />
     </key>
   </component>
-
-  <component name="RunManager" selected="JUnit.AccessTest.Nearest">
+  <component name="RunManager" selected="JUnit.AccessTest.Access">
+    <configuration name="AccessTest.Access" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AccessTest" />
+      <option name="METHOD_NAME" value="Access" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccessTest.Nearest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AccessTest" />
       <option name="METHOD_NAME" value="Nearest" />
       <option name="TEST_OBJECT" value="method" />
-
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HilbertTest.orderByHilbertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rtree" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HilbertTest" />
-      <option name="METHOD_NAME" value="orderByHilbertTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NearestTest.orderByCenterXTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NearestTest.searchNearest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NearestTest" />
-      <option name="METHOD_NAME" value="orderByCenterXTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="STRTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rtree" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="STRTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="STRTest.createRTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rtree" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="STRTest" />
-      <option name="METHOD_NAME" value="createRTreeTest" />
+      <option name="METHOD_NAME" value="searchNearest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,33 +141,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TiempoBusquedaTest.Tiempos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TiempoBusquedaTest" />
+      <option name="METHOD_NAME" value="Tiempos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-
-
+        <item itemvalue="JUnit.AccessTest.Access" />
+        <item itemvalue="JUnit.TiempoBusquedaTest.Tiempos" />
+        <item itemvalue="JUnit.NearestTest.searchNearest" />
         <item itemvalue="JUnit.AccessTest.Nearest" />
         <item itemvalue="JUnit.TiempoBusquedaTest.Nearest" />
-        <item itemvalue="JUnit.NearestTest.searchNearest" />
-        <item itemvalue="JUnit.NearestTest.orderByCenterXTest" />
-        <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
-
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="" />
+      <changelist id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="" />
       <created>1696769631836</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696769631836</updated>
       <workItem from="1696769633084" duration="11936000" />
       <workItem from="1696872642063" duration="1072000" />
-
       <workItem from="1697046902630" duration="177000" />
       <workItem from="1697047118023" duration="12283000" />
-
       <workItem from="1696877149164" duration="18056000" />
       <workItem from="1696908682754" duration="24000" />
       <workItem from="1696969366270" duration="5798000" />
@@ -206,7 +181,8 @@
       <workItem from="1697167406033" duration="862000" />
       <workItem from="1697203391159" duration="1041000" />
       <workItem from="1697405622847" duration="2725000" />
-
+      <workItem from="1697470197418" duration="1341000" />
+      <workItem from="1697519343815" duration="1269000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion STR y clases necesarias (sin probar-falta recursividad)">
       <option name="closed" value="true" />
@@ -253,24 +229,18 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-
     <MESSAGE value="Creacion STR y clases necesarias (sin probar-falta recursividad)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion STR y clases necesarias (sin probar-falta recursividad)" />
-
     <MESSAGE value="lol" />
     <MESSAGE value="Busqueda con counter" />
     <option name="LAST_COMMIT_MESSAGE" value="Busqueda con counter" />
-
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="26" />
         </breakpoint>
-
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Nearest.java</url>
           <line>87</line>
@@ -293,10 +263,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/test/TiempoBusquedaTest.java</url>
-          <line>26</line>
+          <line>68</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
-
       </breakpoints>
     </breakpoint-manager>
   </component>

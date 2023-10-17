@@ -16,14 +16,14 @@ public class TiempoBusquedaTest {
         randomList = new ArrayList<>();
 
         randomListQ = RandomRectangleGenerator.crearRectangulos(7,100000, 0); //lista de rectangulos de consultas Q (en vez de 100 son 128)
-        for (int i = 10; i <= 25; i++){ //cambiar el 15 a 25 despues
+        for (int i = 10; i <= 15; i++){ //cambiar el 15 a 25 despues
           List<Rectangle>  r = RandomRectangleGenerator.crearRectangulos(i,100,0);
           randomList.add(r);
           }
         //System.out.println(randomList.size());
         }
 
-    public void Nearest(int k) {
+    public long Nearest(int k) {
         List<Rectangle> r = null; // esto esta para que no se queje intellij
         if (randomList != null) {
             r = randomList.get(k); //sacamos de la lista la lista de rectangulos
@@ -43,10 +43,11 @@ public class TiempoBusquedaTest {
 
         long searchTime = endTime - startTime;
         long searchAverageTime = searchTime / randomListQ.size();
-        System.out.println("El tiempo de busqueda fue de: " + searchAverageTime);
+        //System.out.println("El tiempo de busqueda fue de: " + searchAverageTime);
+        return searchAverageTime;
     }
 
-    public void STR(int k){
+    public long STR(int k){
         List<Rectangle> r = null; // esto esta para que no se queje intellij
         if (randomList != null) {
             r = randomList.get(k); //sacamos de la lista la lista de rectangulos
@@ -66,10 +67,11 @@ public class TiempoBusquedaTest {
 
         long searchTime = endTime - startTime;
         long searchAverageTime = searchTime / randomListQ.size();
-        System.out.println(searchAverageTime);
+        //System.out.println(searchAverageTime);
+        return searchAverageTime;
     }
 
-    public void Hilbert(int k){
+    public long Hilbert(int k){
         List<Rectangle> r = null; // esto esta para que no se queje intellij
         if (randomList != null) {
             r = randomList.get(k); //sacamos de la lista la lista de rectangulos
@@ -100,15 +102,20 @@ public class TiempoBusquedaTest {
 
         long searchTime = endTime - startTime;
         long searchAverageTime = searchTime / randomListQ.size();
-        System.out.println(searchAverageTime);
+        //System.out.println(searchAverageTime);
+        return searchAverageTime;
     }
 
     @Test
     public void Tiempos() {
-        for (int i = 0; i <= 15; i++) {
-            Nearest(i); //iteramos por cada lista de 2_10 a 2_25
-            STR(i);
-            Hilbert(i);
+        for (int i = 10; i <= 15; i++) { //cambiar de 0 a 15 despues
+            System.out.println("Para el valor de 2^" + i + "\nLos tiempos promedio de busqueda fueron:");
+            long n = Nearest(i-10); //iteramos por cada lista de 2_10 a 2_25
+            System.out.println("Nearest: " + n);
+            long s = STR(i-10);
+            System.out.println("STR: " + s);
+            long h = Hilbert(i-10);
+            System.out.println("Hilbert: " + h);
         }
     }
 
