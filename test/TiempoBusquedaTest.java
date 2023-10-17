@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
@@ -12,9 +13,10 @@ public class TiempoBusquedaTest {
     Rectangle r1;
     @Before
     public void prep() {
+        randomList = new ArrayList<>();
 
         randomListQ = RandomRectangleGenerator.crearRectangulos(7,100000, 0); //lista de rectangulos de consultas Q (en vez de 100 son 128)
-        for (int i = 10; i <= 15; i++){ //cambiar el 15 a 25 despues
+        for (int i = 10; i <= 25; i++){ //cambiar el 15 a 25 despues
           List<Rectangle>  r = RandomRectangleGenerator.crearRectangulos(i,100,0);
           randomList.add(r);
           }
@@ -29,7 +31,7 @@ public class TiempoBusquedaTest {
             System.out.println("ocurrio un error");
         }
 
-        Nearest nearest = new Nearest(r, 3);
+        Nearest nearest = new Nearest(r, 128);
 
         RTree rtree = nearest.createRTree();
 
@@ -41,7 +43,7 @@ public class TiempoBusquedaTest {
 
         long searchTime = endTime - startTime;
         long searchAverageTime = searchTime / randomListQ.size();
-        System.out.println(searchAverageTime);
+        System.out.println("El tiempo de busqueda fue de: " + searchAverageTime);
     }
 
     public void STR(int k){
@@ -52,7 +54,7 @@ public class TiempoBusquedaTest {
             System.out.println("ocurrio un error");
         }
 
-        STR str = new STR(r, 3);
+        STR str = new STR(r, 128);
 
         RTree rtree = str.createRTree();
 
@@ -86,7 +88,7 @@ public class TiempoBusquedaTest {
             randomListQ.get(i).n = hc;
         }
 
-        HilbertCurve hilbert = new HilbertCurve(r, 3);
+        HilbertCurve hilbert = new HilbertCurve(r, 128);
 
         RTree rtree = hilbert.createRTreeH();
 

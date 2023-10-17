@@ -61,7 +61,7 @@ public class HilbertCurve {
     public void orderByNodeHilbert(List<INode> lRec){
         Comparator<INode> comparatorByD =
                 Comparator.comparing(INode::getHilbertCurvePosition);
-        System.out.println(comparatorByD);
+        //System.out.println(comparatorByD);
         lRec.sort(comparatorByD);
     }
 

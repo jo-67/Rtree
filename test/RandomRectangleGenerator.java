@@ -43,7 +43,7 @@ public class RandomRectangleGenerator {
             {
                 Rectangle r = new Rectangle(x1,y1,x2,y2,hilbert);
                 listaDeRectangulos.add(r);
-                System.out.println(listaDeRectangulos.size());
+                //System.out.println(listaDeRectangulos.size());
             }
 
             if (k == kmax){
@@ -51,7 +51,7 @@ public class RandomRectangleGenerator {
             }else{
                 k = k + 1;
             }
-            System.out.println(k);
+            //System.out.println(k);
 
         }
         /*
