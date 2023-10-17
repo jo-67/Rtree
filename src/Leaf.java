@@ -16,4 +16,12 @@ public class Leaf extends AbstractNode implements INode{
         }
         return new SearchResult(rl, 1);
     }
+
+    public byte[] toByteArray() {
+        return rectangle.toByteArray();
+    }
+
+    public boolean equals(Leaf l) {
+        return this.rectangle.equals(l.rectangle);
+    }
 }

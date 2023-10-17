@@ -74,4 +74,33 @@ public class Node extends AbstractNode implements INode{
 
         return new SearchResult(rectangleList,counter);
     }
+
+    public byte[] toByteArray(int maxChildren) {
+        // id [ id , id, ... 0,0,0]
+        int id = this.hashCode();
+        List<Integer> array = new ArrayList<>();
+        array.add(id);
+        for (int i = 0; i < children.size(); i++) {
+            array.add(children.get(i).hashCode());
+        }
+        for (int i = 0; i < maxChildren - children.size(); i++) {
+            array.add(-1);
+        }
+        return DiskHandler.intToByteArray(array);
+    }
+
+    public boolean equals(Node node) {
+        if (this.rectangle.equals(node.rectangle) &&
+                this.children.size() == node.children.size()) {
+            for (int i = 0; i < children.size(); i++) {
+                if ( ! this.children.get(i).equals(node.children.get(i))) {
+                    return false;
+                }
+            }
+            return true;
+
+        } else {
+            return false;
+        }
+    }
 }

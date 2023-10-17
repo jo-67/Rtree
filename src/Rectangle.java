@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,5 +61,27 @@ public class Rectangle {
     public int hasN() {
         return n;
 
+    }
+
+    public byte[] toByteArray() {
+        double[] data = {this.x1,this.y1,this.x2, this.y2, this.n};
+        try (ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+             ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream)) {
+
+            objectOutputStream.writeObject(data); // Serializa el objeto Node
+            objectOutputStream.flush();
+
+            return byteArrayOutputStream.toByteArray();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public boolean equals(Rectangle r) {
+        return getMinX().equals(r.getMinX()) &&
+                getMaxX().equals(r.getMaxX()) &&
+                getMinY().equals(r.getMinY()) &&
+                getMaxY().equals(r.getMaxY());
     }
 }
