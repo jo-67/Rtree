@@ -51,7 +51,7 @@ public class RandomRectangleGenerator {
         crearRectangulos(10,100,12);
         crearRectangulos(10, 100000, 0);
     }
-    public static List<Rectangle> crearRectangulos2(int l, int cantidad) {
+    public static List<Rectangle> crearRectangulos2(int l, int cantidad, int hilbert) {
         List<Rectangle> listaRectangulos = new ArrayList<>();
         Random rand = new Random();
         int n = (int) Math.pow(2, cantidad); //cantidad de rectangulos que se quieren generar
@@ -61,7 +61,7 @@ public class RandomRectangleGenerator {
             int x3 = rand.nextInt(l + 1);  // Tamaño del lado entre 0 y l
             int x4 = rand.nextInt(l + 1);
 
-            Rectangle rectangulo = new Rectangle(x1, x2, x3, x4);
+            Rectangle rectangulo = new Rectangle(x1, x2, x3, x4, hilbert);
             listaRectangulos.add(rectangulo);
         }
 

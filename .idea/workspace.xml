@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="Cambio de double a int">
+    <list default="true" id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="Implementacion de search en memoria">
+      <change afterPath="$PROJECT_DIR$/test/MTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/TiempoBusquedaTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Rtree/INode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/INode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Rtree/Leaf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/Leaf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Rtree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Rtree/RTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Rtree/RTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/INode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/INode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leaf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Rtree/NearestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Rtree/NearestTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MemoryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MemoryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/AccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AccessTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/AccessTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AccessTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/diskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/diskTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +103,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.diskTest.searchTest">
+  <component name="RunManager" selected="JUnit.MTest.accessM">
     <configuration name="AccessTest2.Access" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,41 +114,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TiempoBusquedaTest.Tiempos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MTest.accessM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TiempoBusquedaTest" />
+      <option name="MAIN_CLASS_NAME" value="MTest" />
+      <option name="METHOD_NAME" value="accessM" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MTest.bestM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MTest" />
+      <option name="METHOD_NAME" value="bestM" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TiempoBusquedaTest2.Tiempos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TiempoBusquedaTest2" />
       <option name="METHOD_NAME" value="Tiempos" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="diskTest.clearFolderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="diskTest.clearFolder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="diskTest" />
-      <option name="METHOD_NAME" value="clearFolderTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="diskTest.searchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rtree" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="diskTest" />
-      <option name="METHOD_NAME" value="searchTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="diskTest.writeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rtree" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="diskTest" />
-      <option name="METHOD_NAME" value="writeTest" />
+      <option name="METHOD_NAME" value="clearFolder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.diskTest.searchTest" />
-        <item itemvalue="JUnit.diskTest.clearFolderTest" />
-        <item itemvalue="JUnit.diskTest.writeTest" />
+        <item itemvalue="JUnit.MTest.accessM" />
+        <item itemvalue="JUnit.MTest.bestM" />
+        <item itemvalue="JUnit.TiempoBusquedaTest2.Tiempos" />
         <item itemvalue="JUnit.AccessTest2.Access" />
-        <item itemvalue="JUnit.TiempoBusquedaTest.Tiempos" />
+        <item itemvalue="JUnit.diskTest.clearFolder" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +186,7 @@
       <workItem from="1697405622847" duration="2725000" />
       <workItem from="1697470197418" duration="1341000" />
       <workItem from="1697519343815" duration="1269000" />
-      <workItem from="1697644208096" duration="5571000" />
+      <workItem from="1697644208096" duration="10457000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion STR y clases necesarias (sin probar-falta recursividad)">
       <option name="closed" value="true" />
@@ -236,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697580998189</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implementacion de search en memoria">
+      <created>1697651496726</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697651496726</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +273,8 @@
     <MESSAGE value="Busqueda con counter" />
     <MESSAGE value="Escritura en archivo lista" />
     <MESSAGE value="Cambio de double a int" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambio de double a int" />
+    <MESSAGE value="Implementacion de search en memoria" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementacion de search en memoria" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -295,41 +298,6 @@
           <url>file://$PROJECT_DIR$/test/TiempoBusquedaTest.java</url>
           <line>22</line>
           <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/AccessTest2.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/AccessTest2.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MemoryHandler.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MemoryHandler.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MemoryHandler.java</url>
-          <line>129</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MemoryHandler.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MemoryHandler.java</url>
-          <line>134</line>
-          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

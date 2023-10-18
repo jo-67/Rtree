@@ -9,10 +9,15 @@ public class MemoryHandler {
         this.path = path;
     }
 
-    public static String writeRTree(RTree rtree) throws IOException {
+    public static String writeRTree(RTree rtree) {
         // to do limpiar carpeta
         clearFolder(path);
-        String rootPath = writeNode(rtree.getRoot());
+        String rootPath = null;
+        try {
+            rootPath = writeNode(rtree.getRoot());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return rootPath;
     }
 

@@ -65,5 +65,10 @@ public class diskTest {
         System.out.println("Numero de resultados: " + s2.getRectangleList().size());
     }
 
+    @Test
+    public void clearFolder() {
+        MemoryHandler.clearFolder("C:\\Users\\pepad\\IdeaProjects\\Rtree\\out\\nodes");
+    }
+
 
 }
