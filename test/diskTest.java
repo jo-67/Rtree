@@ -13,7 +13,7 @@ public class diskTest {
     RTree rtree;
     @Before
     public void prep() {
-        Rectangle r1 = new Rectangle(1, 2, 3, 4, 0);
+        Rectangle r1 = new Rectangle(1, 1, 10, 10, 0);
         Rectangle r2 = new Rectangle(5, 3, 7, 6, 0);
         Rectangle r3 = new Rectangle(2, 1, 4, 5, 0);
         Rectangle r4 = new Rectangle(3, 4, 6, 8, 0);
@@ -42,38 +42,28 @@ public class diskTest {
     }
 
     @Test
-    public void writeTest() {
-        String path = "C:\\Users\\pepad\\IdeaProjects\\Rtree\\out\\file.bin";
-        MemoryHandler m = new MemoryHandler(path);
-        m.writeRTree(rtree);
+    public void writeTest() throws IOException {
+
+        String path = MemoryHandler.writeRTree(rtree);
+        System.out.println("El nodo raiz: " + path);
+        List<Integer> info = MemoryHandler.readNodeInfo(path);
+        System.out.println(info);
     }
 
     @Test
-    public void readTest() {
-        String path = "C:\\Users\\pepad\\IdeaProjects\\Rtree\\out\\file.bin";
-        MemoryHandler m = new MemoryHandler(path);
-        RTree rTree  = m.readBinaryToRTree();
-        System.out.println(rTree);
+    public void searchTest() throws IOException {
+        String path = MemoryHandler.writeRTree(rtree);
+        System.out.println("El nodo raiz: " + path);
+        List<Integer> info = MemoryHandler.readNodeInfo(path);
+        System.out.println(info);
+        SearchResult s = MemoryHandler.dSearch(new Rectangle(2,2,3,3), path, 0 );
+        System.out.println("Numero de accesos: " + s.getCounter());
+        System.out.println("Numero de resultados: " + s.getRectangleList().size());
+
+        SearchResult s2 = rtree.search(new Rectangle(2,2,3,3));
+        System.out.println("Numero de accesos: " + s2.getCounter());
+        System.out.println("Numero de resultados: " + s2.getRectangleList().size());
     }
 
-    @Test
-    public void transformationTest() throws IOException, ClassNotFoundException {
-
-        byte[] bytes = MemoryHandler.rtreeToBytes(rtree);
-
-        RTree rTree2 = MemoryHandler.bytesToRtree(bytes);
-        boolean b = rTree2.equals(rtree);
-        assertTrue(b);
-    }
-
-    @Test
-    public void readSegmentTest() throws IOException, ClassNotFoundException {
-        String path = "C:\\Users\\pepad\\IdeaProjects\\Rtree\\out\\file.bin";
-        MemoryHandler m = new MemoryHandler(path);
-        byte[] r = m.readFileSegment(0, 100);
-        System.out.println(r);
-        RTree rTree = MemoryHandler.bytesToRtree(r);
-        System.out.println(rTree);
-    }
 
 }

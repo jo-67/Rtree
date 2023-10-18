@@ -13,7 +13,7 @@ public class RTree implements Serializable {
     }
 
     public SearchResult search(Rectangle r) {
-        return root.search(r,1);
+        return root.search(r,0);
     }
 
     public boolean equals(RTree rTree) {

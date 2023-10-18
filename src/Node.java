@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -63,29 +64,26 @@ public class Node extends AbstractNode implements INode, Serializable {
     }
 
     @Override
-    public SearchResult search(Rectangle r, int counter) {
+    public SearchResult search(Rectangle r, long counter) {
         List<Rectangle> rectangleList = new ArrayList<>();
+        if (! this.rectangle.intersect(r)) { // si no intersecta, no se busca en los nodos
+            return new SearchResult(rectangleList, counter + 1);
+        }
         for (int i = 0; i < children.size(); i++) {
-            if (children.get(i).intersect(r)) {
-                SearchResult add = children.get(i).search(r,0);
-                rectangleList.addAll(add.getRectangleList());
-                counter = counter + add.getCounter(); // añade numero de nodos accedidos en add
-            }
-                counter = counter + 1; // añade haber accedido al nodo
+            SearchResult add = children.get(i).search(r,0);
+            rectangleList.addAll(add.getRectangleList());
+            counter = counter + add.getCounter(); // añade numero de nodos accedidos en add
         }
 
-        return new SearchResult(rectangleList,counter);
+        return new SearchResult(rectangleList,counter + 1); // +1 al acceder a este nodo
     }
 
-    public boolean equals(Node node) {
-        if (rectangle.equals(node.rectangle) && children.size() == node.children.size()) {
-            for (int i = 0; i < children.size(); i++) {
-                if (! this.children.get(i).equals(node.children.get(i))) {
-                    return false;
-                }
-            }
-            return true;
+
+    public void write() {
+        try {
+            MemoryHandler.writeNode(this);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return false;
     }
 }

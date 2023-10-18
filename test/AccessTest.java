@@ -24,7 +24,7 @@ public class AccessTest {
         Nearest nearest = new Nearest(r, 128);
         RTree rtree = nearest.createRTree();
 
-        int accesos = 0;
+        long accesos = 0;
         for (int i = 0; i < randomListQ.size(); i++) {
             SearchResult result = rtree.search(randomListQ.get(i));
             accesos = accesos + result.getCounter();
@@ -39,7 +39,7 @@ public class AccessTest {
         STR str = new STR(r, 128);
         RTree rtree = str.createRTree();
 
-        int accesos = 0;
+        long accesos = 0;
         for (int i = 0; i < randomListQ.size(); i++) {
             SearchResult result = rtree.search(randomListQ.get(i));
             accesos = accesos + result.getCounter();
@@ -66,7 +66,7 @@ public class AccessTest {
         HilbertCurve hilbert = new HilbertCurve(r, 128);
         RTree rtree = hilbert.createRTreeH();
 
-        int accesos = 0;
+        long accesos = 0;
         for (int i = 0; i < randomListQ.size(); i++) {
             SearchResult result = rtree.search(randomListQ.get(i));
             accesos = accesos + result.getCounter();

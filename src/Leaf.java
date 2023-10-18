@@ -1,5 +1,5 @@
+import java.io.IOException;
 import java.io.Serializable;
-import java.lang.annotation.Inherited;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +12,7 @@ public class Leaf extends AbstractNode implements INode, Serializable {
     }
 
     @Override
-    public SearchResult search(Rectangle r, int counter) {
+    public SearchResult search(Rectangle r, long counter) {
         List<Rectangle> rl = new ArrayList<>();
         if (rectangle.intersect(r)) {
             rl.add(rectangle);
@@ -22,5 +22,17 @@ public class Leaf extends AbstractNode implements INode, Serializable {
 
     public boolean equals(Leaf l) {
         return rectangle.equals(l.rectangle);
+    }
+
+    public void write() {
+        try {
+            MemoryHandler.writeLeaf(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Rectangle getRectangle() {
+        return this.rectangle;
     }
 }

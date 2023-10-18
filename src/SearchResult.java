@@ -1,14 +1,14 @@
 import java.util.List;
 
 public class SearchResult {
-    int counter;
+    long counter;
     List<Rectangle> rectangleList;
 
-    public SearchResult(List<Rectangle> rectangleList,int counter) {
+    public SearchResult(List<Rectangle> rectangleList,long counter) {
         this.rectangleList = rectangleList;
         this.counter = counter;
     }
-    public int getCounter() {
+    public long getCounter() {
         return counter;
     }
 
