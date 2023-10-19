@@ -4,9 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="Clase de test conjunto">
+
+    <list default="true" id="2771d8c3-47ab-4c51-8257-51738010103d" name="Changes" comment="Creacion STR y clases necesarias (sin probar-falta recursividad)">
     <list default="true" id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="Ajustes">
       <change afterPath="$PROJECT_DIR$/test/Experimento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/STR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/NearestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/NearestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/STRTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/STRTest.java" afterDir="false" />
+
+
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/AccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AccessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TiempoBusquedaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TiempoBusquedaTest.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,10 +110,19 @@
       <recent name="" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.Experimento.Access">
+    <configuration name="Experimento.Access" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
+  <component name="RunManager" selected="JUnit.AccessTest.Nearest">
+    <configuration name="AccessTest.Nearest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
   <component name="RunManager" selected="JUnit.TiempoBusquedaTest2.Tiempos">
     <configuration name="AccessTest2.Access" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Experimento" />
+      <option name="METHOD_NAME" value="Access" />
+      <option name="MAIN_CLASS_NAME" value="AccessTest" />
+      <option name="METHOD_NAME" value="Nearest" />
       <option name="MAIN_CLASS_NAME" value="AccessTest2" />
       <option name="METHOD_NAME" value="Access" />
       <option name="TEST_OBJECT" value="method" />
@@ -155,6 +177,19 @@
         <item itemvalue="JUnit.MTest.accessM" />
         <item itemvalue="JUnit.MTest.bestM" />
         <item itemvalue="JUnit.AccessTest2.Access" />
+
+
+        <item itemvalue="JUnit.AccessTest.Nearest" />
+        <item itemvalue="JUnit.TiempoBusquedaTest.Nearest" />
+        <item itemvalue="JUnit.NearestTest.searchNearest" />
+        <item itemvalue="JUnit.NearestTest.orderByCenterXTest" />
+        <item itemvalue="JUnit.HilbertTest.orderByHilbertTest" />
+
+        <item itemvalue="JUnit.Experimento.Access" />
+        <item itemvalue="JUnit.TiempoBusquedaTest2.Tiempos" />
+        <item itemvalue="JUnit.MTest.timeM" />
+        <item itemvalue="JUnit.MTest.accessM" />
+        <item itemvalue="JUnit.MTest.bestM" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +216,10 @@
       <workItem from="1697470197418" duration="1341000" />
       <workItem from="1697519343815" duration="1269000" />
       <workItem from="1697644208096" duration="14022000" />
+      <workItem from="1697470197418" duration="1341000" />
+      <workItem from="1697519343815" duration="1269000" />
+      <workItem from="1697644208096" duration="14480000" />
+
     </task>
     <task id="LOCAL-00001" summary="Creacion STR y clases necesarias (sin probar-falta recursividad)">
       <option name="closed" value="true" />
@@ -197,6 +236,57 @@
       <option name="project" value="LOCAL" />
       <updated>1697168207527</updated>
     </task>
+    <task id="LOCAL-00003" summary="Escritura en archivo lista">
+      <created>1697567812481</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697567812481</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Escritura en archivo lista">
+      <created>1697567823626</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697567823626</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Cambio de double a int">
+      <created>1697568104897</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697568104897</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Cambio de double a int">
+      <created>1697580998188</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697580998189</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implementacion de search en memoria">
+      <created>1697651496726</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697651496726</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ajustes">
+      <created>1697656346442</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697656346442</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Clase de test conjunto">
+      <created>1697686862754</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697686862754</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="3" />
     <task id="LOCAL-00003" summary="Escritura en archivo lista">
       <created>1697567812481</created>
       <option name="number" value="00003" />
@@ -272,6 +362,14 @@
     <MESSAGE value="Creacion STR y clases necesarias (sin probar-falta recursividad)" />
     <MESSAGE value="lol" />
     <MESSAGE value="Busqueda con counter" />
+    <MESSAGE value="Escritura en archivo lista" />
+    <MESSAGE value="Cambio de double a int" />
+    <MESSAGE value="Implementacion de search en memoria" />
+    <MESSAGE value="Ajustes" />
+    <MESSAGE value="Clase de test conjunto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clase de test conjunto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Busqueda con counter" />
+
     <MESSAGE value="Escritura en archivo lista" />
     <MESSAGE value="Cambio de double a int" />
     <MESSAGE value="Implementacion de search en memoria" />
