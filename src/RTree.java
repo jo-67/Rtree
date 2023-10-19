@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.List;
 
-public class RTree {
+public class RTree implements Serializable {
     private Node root;
     private int maxChildren;
     public RTree(Node rootNode, int MaxChildren) {
@@ -12,6 +13,14 @@ public class RTree {
     }
 
     public SearchResult search(Rectangle r) {
-        return root.search(r,1);
+        return root.search(r,0);
+    }
+
+    public boolean equals(RTree rTree) {
+        return root.equals(rTree.root);
+    }
+
+    public Node getRoot() {
+        return this.root;
     }
 }

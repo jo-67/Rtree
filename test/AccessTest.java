@@ -12,42 +12,44 @@ public class AccessTest {
     public void prep() {
         randomList = new ArrayList<>();
         randomListQ = RandomRectangleGenerator.crearRectangulos(7,100000, 0); //lista de rectangulos de consultas Q (en vez de 100 son 128)
-        for (int i = 10; i <= 25; i++){ //cambiar el 15 a 25 despues
+        for (int i = 10; i <= 15; i++){ //cambiar el 15 a 25 despues
             List<Rectangle>  r = RandomRectangleGenerator.crearRectangulos(i,100,0);
             randomList.add(r);
         }
         //System.out.println(randomList.size());
     }
 
-    public void Nearest(int k) {
+    public long Nearest(int k) {
         List<Rectangle>r = randomList.get(k); //+1 porque si no no calza
         Nearest nearest = new Nearest(r, 128);
         RTree rtree = nearest.createRTree();
 
-        int accesos = 0;
+        long accesos = 0;
         for (int i = 0; i < randomListQ.size(); i++) {
             SearchResult result = rtree.search(randomListQ.get(i));
             accesos = accesos + result.getCounter();
         }
         long accessAverageTime = accesos / randomList.size();
-        System.out.println(accessAverageTime);
+        //System.out.println(accessAverageTime);
+        return accessAverageTime;
     }
 
-    public void STR(int k) {
-        List<Rectangle>r = randomList.get(k);
+    public long STR(int k) {
+        List<Rectangle> r = randomList.get(k);
         STR str = new STR(r, 128);
         RTree rtree = str.createRTree();
 
-        int accesos = 0;
+        long accesos = 0;
         for (int i = 0; i < randomListQ.size(); i++) {
             SearchResult result = rtree.search(randomListQ.get(i));
             accesos = accesos + result.getCounter();
         }
         long accessAverageTime = accesos / randomList.size();
-        System.out.println(accessAverageTime);
+        //System.out.println(accessAverageTime);
+        return accessAverageTime;
     }
 
-    public void Hilbert(int k) {
+    public long Hilbert(int k) {
         List<Rectangle>r = randomList.get(k);
 
         //recorremos la lista y le agregamos a cada rectangulo el numero de hilbert log_base_2 = 500.000
@@ -61,28 +63,31 @@ public class AccessTest {
             randomListQ.get(i).n = hc;
         }
 
-
         HilbertCurve hilbert = new HilbertCurve(r, 128);
         RTree rtree = hilbert.createRTreeH();
 
-
-        int accesos = 0;
+        long accesos = 0;
         for (int i = 0; i < randomListQ.size(); i++) {
             SearchResult result = rtree.search(randomListQ.get(i));
             accesos = accesos + result.getCounter();
         }
         long accessAverageTime = accesos / randomList.size();
-        System.out.println(accessAverageTime);
+        //System.out.println(accessAverageTime);
+        return accessAverageTime;
     }
 
 
 
     @Test
     public void Access() {
-        for (int i = 0; i <= 15; i++) { //cambiar de 0 a 15 despues
-            Nearest(i); //iteramos por cada lista de 2_10 a 2_25
-            STR(i);
-            Hilbert(i);
+        for (int i = 10; i <= 15; i++) { //cambiar de 0 a 15 despues
+            System.out.println("Para el valor de 2^" + i + "\nEl numero de accesos promedio de busqueda fueron:");
+            long n = Nearest(i-10); //iteramos por cada lista de 2_10 a 2_25
+            System.out.println("Nearest: " + n);
+            long s = STR(i-10);
+            System.out.println("STR: " + s);
+            long h = Hilbert(i-10);
+            System.out.println("Hilbert: " + h);
         }
     }
 

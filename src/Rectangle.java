@@ -1,30 +1,31 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Rectangle {
-    double x1, y1, x2, y2;
+public class Rectangle implements Serializable {
+    int x1, y1, x2, y2;
     int n; //valor para construir curva
 
-    public Rectangle(double x1, double y1, double x2, double y2, int n) {
+    public Rectangle(int x1, int y1, int x2, int y2, int n) {
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
         this.y2 = y2;
         this.n = n;
     }
-    public Rectangle(double x1, double y1, double x2, double y2) {
+    public Rectangle(int x1, int y1, int x2, int y2) {
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
         this.y2 = y2;
         this.n = n;
     }
-    public Double centerX() {
+    public Integer centerX() {
         return  (x1+x2) /2;
     }
 
 
-    public Double centerY() {
+    public Integer centerY() {
         return (y1 + y2) / 2;
     }
     public int getHilbertCurvePosition() {
@@ -32,17 +33,17 @@ public class Rectangle {
 
     }
 
-    public Double getMinX() {
-        return Double.min(x1,x2);
+    public Integer getMinX() {
+        return Integer.min(x1,x2);
     }
-    public Double getMaxX() {
-        return Double.max(x1,x2);
+    public Integer getMaxX() {
+        return Integer.max(x1,x2);
     }
-    public Double getMinY() {
-        return Double.min(y1,y2);
+    public Integer getMinY() {
+        return Integer.min(y1,y2);
     }
-    public Double getMaxY() {
-        return Double.max(y1,y2);
+    public Integer getMaxY() {
+        return Integer.max(y1,y2);
     }
 
     public Boolean intersect(Rectangle r) {
@@ -60,5 +61,12 @@ public class Rectangle {
     public int hasN() {
         return n;
 
+    }
+
+    public boolean equals(Rectangle r) {
+        return getMinX().equals(r.getMinX()) &&
+                getMaxX().equals(r.getMaxX()) &&
+                getMinY().equals(r.getMinY()) &&
+                getMaxY().equals(r.getMaxY());
     }
 }
