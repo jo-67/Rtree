@@ -1,3 +1,5 @@
+import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -5,9 +7,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Node extends AbstractNode implements INode{
+public class Node extends AbstractNode implements INode, Serializable {
     private List<INode> children;
-    //private Rectangle rectangle;
+    private Rectangle rectangle;
 
     public Node() {
         super();
@@ -30,26 +32,27 @@ public class Node extends AbstractNode implements INode{
         Comparator<INode> compareByMinX =
                 Comparator.comparing(INode::getMinX);
         children.sort(compareByMinX);
-        Double minX = children.get(0).getMinX();
+        Integer minX = children.get(0).getMinX();
         Comparator<INode> compareByMaxX =
                 Comparator.comparing(INode::getMaxX);
         children.sort(compareByMaxX);
-        double maxX = children.get(children.size()-1).getMaxX();
+        int maxX = children.get(children.size()-1).getMaxX();
 
         Comparator<INode> compareByMinY =
                 Comparator.comparing(INode::getMinY);
         children.sort(compareByMinY);
-        double minY = children.get(0).getMinY();
+        int minY = children.get(0).getMinY();
         Comparator<INode> compareByMaxY =
                 Comparator.comparing(INode::getMaxY);
         children.sort(compareByMaxY);
-        double maxY = children.get(children.size()-1).getMaxY();
+        int maxY = children.get(children.size()-1).getMaxY();
 
         if (children.get(0).hasN() != 0){ //si tiene un n lo agregamos
             n = children.get(0).hasN();
         }
 
         rectangle = new Rectangle(minX,minY, maxX, maxY, n);
+        super.setRectangle(rectangle);
     }
 
     public Rectangle getRectangle() {
@@ -61,17 +64,26 @@ public class Node extends AbstractNode implements INode{
     }
 
     @Override
-    public SearchResult search(Rectangle r, int counter) {
+    public SearchResult search(Rectangle r, long counter) {
         List<Rectangle> rectangleList = new ArrayList<>();
+        if (! this.rectangle.intersect(r)) { // si no intersecta, no se busca en los nodos
+            return new SearchResult(rectangleList, counter + 1);
+        }
         for (int i = 0; i < children.size(); i++) {
-            if (children.get(i).intersect(r)) {
-                SearchResult add = children.get(i).search(r,0);
-                rectangleList.addAll(add.getRectangleList());
-                counter = counter + add.getCounter(); // añade numero de nodos accedidos en add
-            }
-                counter = counter + 1; // añade haber accedido al nodo
+            SearchResult add = children.get(i).search(r,0);
+            rectangleList.addAll(add.getRectangleList());
+            counter = counter + add.getCounter(); // añade numero de nodos accedidos en add
         }
 
-        return new SearchResult(rectangleList,counter);
+        return new SearchResult(rectangleList,counter + 1); // +1 al acceder a este nodo
+    }
+
+
+    public void write() {
+        try {
+            MemoryHandler.writeNode(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

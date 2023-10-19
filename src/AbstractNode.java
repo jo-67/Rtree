@@ -8,19 +8,19 @@ public abstract class AbstractNode implements INode{
     }
     public AbstractNode() {
     }
-    public Double getMinX() {
+    public Integer getMinX() {
         return rectangle.getMinX();
     }
-    public Double getMaxX() {
+    public Integer getMaxX() {
         return rectangle.getMaxX();
     }
-    public Double getMinY() {
+    public Integer getMinY() {
         return rectangle.getMinY();
     }
-    public Double getMaxY() {
+    public Integer getMaxY() {
         return rectangle.getMaxY();
     }
-    public Double centerX() {
+    public Integer centerX() {
         return rectangle.centerX();
     }
 
@@ -28,8 +28,7 @@ public abstract class AbstractNode implements INode{
         return rectangle.intersect(r);
     }
 
-
-    public Double centerY() {
+    public Integer centerY() {
         return rectangle.centerY();
     }
 
@@ -44,5 +43,9 @@ public abstract class AbstractNode implements INode{
     @Override
     public List<Rectangle> search(Rectangle r) {
         return null;
+    }
+
+    public void setRectangle(Rectangle r) {
+        this.rectangle = r;
     }
 }
