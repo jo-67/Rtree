@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="Implementacion de search en memoria">
-      <change afterPath="$PROJECT_DIR$/test/MTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TiempoBusquedaTest2.java" afterDir="false" />
+    <list default="true" id="fd76f22b-fa1a-4d81-ada7-77b195c46355" name="Changes" comment="Ajustes">
+      <change afterPath="$PROJECT_DIR$/test/Experimento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Rtree/NearestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Rtree/NearestTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MemoryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MemoryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/AccessTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AccessTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RandomRectangleGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/diskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/diskTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +97,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MTest.accessM">
+  <component name="RunManager" selected="JUnit.TiempoBusquedaTest2.Tiempos">
     <configuration name="AccessTest2.Access" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
@@ -134,6 +128,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MTest.timeM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rtree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MTest" />
+      <option name="METHOD_NAME" value="timeM" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TiempoBusquedaTest2.Tiempos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Rtree" />
       <option name="PACKAGE_NAME" value="" />
@@ -144,23 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="diskTest.clearFolder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rtree" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="diskTest" />
-      <option name="METHOD_NAME" value="clearFolder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TiempoBusquedaTest2.Tiempos" />
+        <item itemvalue="JUnit.MTest.timeM" />
         <item itemvalue="JUnit.MTest.accessM" />
         <item itemvalue="JUnit.MTest.bestM" />
-        <item itemvalue="JUnit.TiempoBusquedaTest2.Tiempos" />
         <item itemvalue="JUnit.AccessTest2.Access" />
-        <item itemvalue="JUnit.diskTest.clearFolder" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +180,7 @@
       <workItem from="1697405622847" duration="2725000" />
       <workItem from="1697470197418" duration="1341000" />
       <workItem from="1697519343815" duration="1269000" />
-      <workItem from="1697644208096" duration="10457000" />
+      <workItem from="1697644208096" duration="14022000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion STR y clases necesarias (sin probar-falta recursividad)">
       <option name="closed" value="true" />
@@ -238,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697651496726</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ajustes">
+      <created>1697656346442</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697656346442</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +275,8 @@
     <MESSAGE value="Escritura en archivo lista" />
     <MESSAGE value="Cambio de double a int" />
     <MESSAGE value="Implementacion de search en memoria" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementacion de search en memoria" />
+    <MESSAGE value="Ajustes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
