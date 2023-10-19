@@ -97,11 +97,11 @@ public class Experimento {
             rl = RandomRectangleGenerator.crearRectangulos2(100,i, hc);
             System.out.println("Para el valor de 2^" + i );
             List<Long> n = Nearest(rl); //iteramos por cada lista de 2_10 a 2_25
-            System.out.println("Nearest: " + "tiempo = " + n.get(1) + " tiempo = " + n.get(0));
+            System.out.println("Nearest: " + "tiempo = " + n.get(1) + " accesos = " + n.get(0));
             List<Long> s = STR(rl);
-            System.out.println("STR: " + "tiempo = " + s.get(1) + " tiempo = " + s.get(0));
+            System.out.println("STR: " + "tiempo = " + s.get(1) + " accesos = " + s.get(0));
             List<Long> h = Hilbert(rl);
-            System.out.println("Hilbert: " + "tiempo = " + h.get(1) + " tiempo = " + h.get(0));
+            System.out.println("Hilbert: " + "tiempo = " + h.get(1) + " accesos = " + h.get(0));
         }
     }
 
