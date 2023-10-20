@@ -92,7 +92,7 @@ public class Experimento {
     @Test
     public void Access() {
         List<Rectangle> rl = new ArrayList<>();
-        for (int i = 10; i <= 25; i++) { //cambiar de 0 a 15 despues
+        for (int i = 24; i > 10; i--) { //cambiar de 0 a 15 despues
             rl.clear();
             rl = RandomRectangleGenerator.crearRectangulos2(100,i, hc);
             System.out.println("Para el valor de 2^" + i );
